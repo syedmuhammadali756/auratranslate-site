@@ -2,7 +2,8 @@
 
 **AuraTranslate AI** is a privacy-first browser extension designed specifically for the bilingual needs of South Asia. Unlike generic translators, AuraTranslate understands **Roman Urdu** (Urdu written in English script) and translates it into natural, professional English — and vice versa. Isse "kia scene hai" ka matlab pata hai.
 
-> **🔗 [Install from Chrome Web Store](#)** | **🌐 [Visit Website](https://yourusername.github.io/auratranslate-site/)**
+> **📥 [Download ZIP (Manual Install)](https://syedmuhammadali756.github.io/auratranslate-site/AuraTranslate-v1.2.zip)** | **🌐 [Visit Website](https://syedmuhammadali756.github.io/auratranslate-site/)**
+> *Note: Chrome security requires you to Unzip > Load Unpacked.*
 
 ## 🚀 Key Features
 
