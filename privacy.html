@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — AuraTranslate AI by Dr Web Jr.</title>
+    <meta name="description"
+        content="AuraTranslate AI privacy policy. We don't collect personal data, we don't store your translations, and we don't sell anything to anyone. All data stays on your device.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #060612;
+            color: #e8e8f0;
+            line-height: 1.75;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .header {
+            text-align: center;
+            padding: 80px 24px 50px;
+            position: relative;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(52, 211, 153, 0.12) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .header-icon {
+            width: 72px;
+            height: 72px;
+            background: linear-gradient(135deg, #34d399, #667eea);
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 22px;
+            box-shadow: 0 8px 30px rgba(52, 211, 153, 0.3);
+        }
+
+        .header-icon svg {
+            width: 34px;
+            height: 34px;
+        }
+
+        .header h1 {
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            font-weight: 900;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #34d399 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .header p {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 1rem;
+        }
+
+        .last-updated {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 4px 14px;
+            background: rgba(52, 211, 153, 0.1);
+            border: 1px solid rgba(52, 211, 153, 0.2);
+            border-radius: 20px;
+            font-size: 0.78rem;
+            color: #6ee7b7;
+            font-weight: 600;
+        }
+
+        .container {
+            max-width: 840px;
+            margin: 0 auto;
+            padding: 0 24px 80px;
+        }
+
+        .nav-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: rgba(255, 255, 255, 0.5);
+            text-decoration: none;
+            margin-bottom: 28px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #34d399;
+        }
+
+        .nav-link svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .main-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 22px;
+            padding: 44px;
+        }
+
+        /* ═══ TLDR ═══ */
+        .tldr {
+            background: rgba(52, 211, 153, 0.06);
+            border: 1px solid rgba(52, 211, 153, 0.15);
+            border-radius: 14px;
+            padding: 24px 28px;
+            margin-bottom: 40px;
+        }
+
+        .tldr h2 {
+            font-size: 1rem;
+            font-weight: 800;
+            color: #6ee7b7;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+
+        .tldr ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .tldr li {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.75);
+            padding: 4px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .tldr li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #34d399;
+            font-weight: 700;
+        }
+
+        /* ═══ SECTIONS ═══ */
+        .section {
+            margin-bottom: 36px;
+            padding-bottom: 36px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .section-head {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 14px;
+        }
+
+        .section-icon {
+            flex-shrink: 0;
+            width: 44px;
+            height: 44px;
+            background: linear-gradient(135deg, #34d399, #667eea);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .section-icon svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        .section h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .section p {
+            color: rgba(255, 255, 255, 0.65);
+            font-size: 0.98rem;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+
+        .section p:last-child {
+            margin-bottom: 0;
+        }
+
+        .highlight {
+            color: #6ee7b7;
+            font-weight: 600;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 44px 24px 32px;
+            color: rgba(255, 255, 255, 0.3);
+            font-size: 0.85rem;
+        }
+
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #8b9cf7;
+        }
+
+        @media (max-width: 768px) {
+            .main-card {
+                padding: 28px 20px;
+            }
+
+            .section-head {
+                gap: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                </svg>
+            </div>
+            <h1>Privacy Policy</h1>
+            <p>No tracking. No accounts. No data sales. Period.</p>
+            <div class="last-updated">Last updated: February 2026</div>
+        </div>
+    </header>
+
+    <div class="container">
+        <a href="benefits.html" class="nav-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6" />
+            </svg>
+            Back to Why AuraTranslate
+        </a>
+
+        <div class="main-card">
+            <!-- TLDR -->
+            <div class="tldr">
+                <h2>The Short Version</h2>
+                <ul>
+                    <li>We never collect your personal information</li>
+                    <li>Your translations are not stored on any server</li>
+                    <li>History and settings live only on your device</li>
+                    <li>We don't use cookies, fingerprints, or trackers</li>
+                    <li>Uninstalling the extension wipes everything</li>
+                </ul>
+            </div>
+
+            <!-- Section 1 -->
+            <div class="section">
+                <div class="section-head">
+                    <div class="section-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <polyline points="3 6 5 6 21 6" />
+                            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+                        </svg>
+                    </div>
+                    <h2>What Happens to Your Text</h2>
+                </div>
+                <p>When you translate something, your text is sent to our AI processing partner (Longcat.chat) to
+                    generate the translation. That request is processed in real time and the result is sent back to you
+                    immediately.</p>
+                <p><span class="highlight">Nothing is stored.</span> The text is not logged, archived, or saved on any
+                    server. Once the translation is returned, the request is gone. There is no database of your
+                    translations anywhere outside your own browser.</p>
+            </div>
+
+            <!-- Section 2 -->
+            <div class="section">
+                <div class="section-head">
+                    <div class="section-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                        </svg>
+                    </div>
+                    <h2>Local Storage Only</h2>
+                </div>
+                <p>Your translation history, notepad content, selected tone, and all settings are stored using Chrome's
+                    built-in local storage (chrome.storage.local). This data lives on your device and is accessible only
+                    to the AuraTranslate extension.</p>
+                <p>No other extension, website, or service can read this data. If you clear your browser data or
+                    uninstall the extension, it is permanently deleted. We have no access to it and no backup exists.
+                </p>
+            </div>
+
+            <!-- Section 3 -->
+            <div class="section">
+                <div class="section-head">
+                    <div class="section-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <line x1="17" y1="11" x2="23" y2="11" />
+                        </svg>
+                    </div>
+                    <h2>No Accounts, No Sign-ups</h2>
+                </div>
+                <p>AuraTranslate does not require you to create an account, enter an email, or provide any identifying
+                    information. There is no login screen. There is no user ID. We don't know who you are, and we
+                    designed it that way on purpose.</p>
+            </div>
+
+            <!-- Section 4 -->
+            <div class="section">
+                <div class="section-head">
+                    <div class="section-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <line x1="12" y1="8" x2="12" y2="12" />
+                            <line x1="12" y1="16" x2="12.01" y2="16" />
+                        </svg>
+                    </div>
+                    <h2>Third-Party AI Processing</h2>
+                </div>
+                <p>Translation requests are processed through Longcat.chat, a third-party AI inference provider. The
+                    text you submit for translation is sent to their API in an anonymized request. No user identifiers,
+                    browser fingerprints, or tracking data is included in these requests.</p>
+                <p>Longcat.chat processes the request and returns the result. We recommend reviewing their own privacy
+                    policy if you have specific concerns about their data handling practices.</p>
+            </div>
+
+            <!-- Section 5 -->
+            <div class="section">
+                <div class="section-head">
+                    <div class="section-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                            <circle cx="12" cy="12" r="3" />
+                        </svg>
+                    </div>
+                    <h2>Permissions We Use and Why</h2>
+                </div>
+                <p><strong>Storage:</strong> To save your translation history, notepad, and settings on your device.</p>
+                <p><strong>Active Tab:</strong> To detect the text field you're currently typing in and inject
+                    translations into it.</p>
+                <p><strong>Scripting:</strong> To place the floating translate button next to text fields on websites
+                    you visit.</p>
+                <p>We request the minimum permissions required for the extension to work. We do not request access to
+                    your browsing history, bookmarks, downloads, or any data beyond what's needed for translation.</p>
+            </div>
+
+            <!-- Section 6 -->
+            <div class="section">
+                <div class="section-head">
+                    <div class="section-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="3" />
+                            <path d="M12 1v6m0 6v6" />
+                            <path d="M4.22 4.22l4.24 4.24m0 7.07l-4.24 4.24" />
+                            <path d="M19.78 4.22l-4.24 4.24m0 7.07l4.24 4.24" />
+                        </svg>
+                    </div>
+                    <h2>Your Control</h2>
+                </div>
+                <p>You have full control over everything. You can clear your history from the extension settings. You
+                    can disable the floating button. You can uninstall the extension at any time and every piece of data
+                    will be removed from your browser.</p>
+                <p>If you have any questions about this policy or how your data is handled, reach out to Dr Web Jr.
+                    through the extension's support channels.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        &copy; 2026 AuraTranslate AI — Created by Dr Web Jr.
+        <br><br>
+        <a href="terms.html">Terms of Service</a> &nbsp;•&nbsp; <a href="benefits.html">Why AuraTranslate?</a>
+    </footer>
+</body>
+
+</html>

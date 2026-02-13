@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why AuraTranslate AI — The Smartest Way to Translate Roman Urdu & English</title>
+    <meta name="description"
+        content="AuraTranslate AI by Dr Web Jr. bridges the gap between Roman Urdu and English speakers. Real-time translation, tone-aware AI, context preservation, and zero data collection.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #060612;
+            color: #e8e8f0;
+            line-height: 1.75;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* ═══ HERO ═══ */
+        .hero {
+            text-align: center;
+            padding: 90px 24px 70px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -40%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(102, 126, 234, 0.18) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 6px 16px;
+            background: rgba(102, 126, 234, 0.12);
+            border: 1px solid rgba(102, 126, 234, 0.25);
+            border-radius: 20px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: #8b9cf7;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 24px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.2rem, 5.5vw, 3.8rem);
+            font-weight: 900;
+            margin-bottom: 18px;
+            line-height: 1.15;
+            background: linear-gradient(135deg, #fff 0%, #c4b5fd 50%, #667eea 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero .subtitle {
+            font-size: 1.15rem;
+            color: rgba(255, 255, 255, 0.6);
+            max-width: 560px;
+            margin: 0 auto 30px;
+            font-weight: 400;
+        }
+
+        .hero .cta-pill {
+            display: inline-block;
+            padding: 14px 36px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: white;
+            text-decoration: none;
+            box-shadow: 0 8px 30px rgba(102, 126, 234, 0.35);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .cta-pill:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(102, 126, 234, 0.5);
+        }
+
+        /* ═══ CONTAINER ═══ */
+        .container {
+            max-width: 1060px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+        }
+
+        /* ═══ SECTION HEADER ═══ */
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 12px;
+        }
+
+        .section-header p {
+            font-size: 1.05rem;
+            color: rgba(255, 255, 255, 0.55);
+            max-width: 550px;
+            margin: 0 auto;
+        }
+
+        .section-header .accent-bar {
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #667eea, #00d2ff);
+            margin: 18px auto 0;
+            border-radius: 2px;
+        }
+
+        /* ═══ PAIN POINTS ═══ */
+        .pain-section {
+            background: rgba(248, 113, 113, 0.04);
+            border: 1px solid rgba(248, 113, 113, 0.12);
+            border-radius: 20px;
+            padding: 44px 40px;
+            margin-bottom: 60px;
+        }
+
+        .pain-section h2 {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: #fca5a5;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .pain-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .pain-item {
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+        }
+
+        .pain-icon {
+            flex-shrink: 0;
+            width: 36px;
+            height: 36px;
+            background: rgba(248, 113, 113, 0.12);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pain-icon svg {
+            width: 18px;
+            height: 18px;
+            stroke: #f87171;
+        }
+
+        .pain-item p {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.6;
+        }
+
+        .pain-item strong {
+            color: #fca5a5;
+        }
+
+        /* ═══ FEATURES GRID ═══ */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-bottom: 60px;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 18px;
+            padding: 34px 28px;
+            transition: all 0.35s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(102, 126, 234, 0.3);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 18px;
+        }
+
+        .feature-icon svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .feature-card p {
+            color: rgba(255, 255, 255, 0.65);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* ═══ HOW IT WORKS ═══ */
+        .steps-section {
+            margin-bottom: 60px;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 24px;
+        }
+
+        .step-card {
+            text-align: center;
+            padding: 30px 20px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 16px;
+        }
+
+        .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 12px;
+            font-weight: 800;
+            font-size: 1.1rem;
+            margin-bottom: 14px;
+            color: white;
+        }
+
+        .step-card h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+
+        .step-card p {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.55);
+            line-height: 1.6;
+        }
+
+        /* ═══ TRUST SECTION ═══ */
+        .trust-section {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 20px;
+            padding: 44px 40px;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .trust-section h2 {
+            font-size: 1.7rem;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .trust-section p {
+            font-size: 1.02rem;
+            color: rgba(255, 255, 255, 0.65);
+            max-width: 680px;
+            margin: 0 auto 14px;
+            line-height: 1.8;
+        }
+
+        /* ═══ CTA ═══ */
+        .cta-section {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 22px;
+            padding: 50px 40px;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 14px;
+        }
+
+        .cta-section p {
+            font-size: 1.05rem;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        /* ═══ SPONSOR ═══ */
+        .sponsor-section {
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .sponsor-section p {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.35);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .sponsor-link {
+            display: inline-block;
+            padding: 14px 30px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 14px;
+            color: #a5b4fc;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s;
+        }
+
+        .sponsor-link:hover {
+            background: rgba(102, 126, 234, 0.1);
+            border-color: rgba(102, 126, 234, 0.3);
+        }
+
+        /* ═══ FOOTER ═══ */
+        .footer {
+            text-align: center;
+            padding: 50px 24px 36px;
+            color: rgba(255, 255, 255, 0.35);
+            font-size: 0.85rem;
+        }
+
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #8b9cf7;
+        }
+
+        @media (max-width: 768px) {
+
+            .pain-section,
+            .trust-section {
+                padding: 30px 22px;
+            }
+
+            .cta-section {
+                padding: 36px 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">Built by Dr Web Jr.</div>
+            <h1>Stop Struggling with Bad Translations</h1>
+            <p class="subtitle">You type Roman Urdu daily. Your translator doesn't get it. AuraTranslate does — because
+                it was built by someone who actually speaks the language.</p>
+            <a href="#features" class="cta-pill">See How It Works ↓</a>
+        </div>
+    </section>
+
+    <div class="container">
+
+        <!-- PAIN POINTS -->
+        <div class="pain-section">
+            <h2>Sound Familiar?</h2>
+            <div class="pain-items">
+                <div class="pain-item">
+                    <div class="pain-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18" />
+                            <line x1="6" y1="6" x2="18" y2="18" />
+                        </svg>
+                    </div>
+                    <p><strong>Google Translate butchers Roman Urdu.</strong> You type "yar kia scene hai" and it gives
+                        you nothing useful. No context, no slang, no understanding of how Pakistanis actually talk.</p>
+                </div>
+                <div class="pain-item">
+                    <div class="pain-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18" />
+                            <line x1="6" y1="6" x2="18" y2="18" />
+                        </svg>
+                    </div>
+                    <p><strong>You switch tabs fifty times a day.</strong> Copy text. Open translator. Paste. Wait. Copy
+                        result. Go back. Paste. That workflow is broken and you know it.</p>
+                </div>
+                <div class="pain-item">
+                    <div class="pain-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18" />
+                            <line x1="6" y1="6" x2="18" y2="18" />
+                        </svg>
+                    </div>
+                    <p><strong>You sound robotic in the other language.</strong> Whether you're replying to a client or
+                        messaging a friend abroad, the translation strips away your personality.</p>
+                </div>
+                <div class="pain-item">
+                    <div class="pain-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18" />
+                            <line x1="6" y1="6" x2="18" y2="18" />
+                        </svg>
+                    </div>
+                    <p><strong>One tone doesn't fit every situation.</strong> The way you text your friend isn't how you
+                        email your boss. Generic translators don't understand that difference.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FEATURES -->
+        <div id="features" class="section-header">
+            <h2>What Makes AuraTranslate Different</h2>
+            <p>Every feature was designed by Dr Web Jr. with one goal: make bilingual communication effortless for real
+                Pakistani users.</p>
+            <span class="accent-bar"></span>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <line x1="2" y1="12" x2="22" y2="12" />
+                        <path
+                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                    </svg>
+                </div>
+                <h3>Roman Urdu That Actually Works</h3>
+                <p>Most translators can't even detect Roman Urdu properly. AuraTranslate was trained specifically on how
+                    Pakistanis actually type — slang, shortcuts, everything. "kia scene hai" gets translated perfectly.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                    </svg>
+                </div>
+                <h3>Translate Without Leaving Your Chat</h3>
+                <p>Type in any text field on any website — WhatsApp Web, Gmail, Facebook, LinkedIn — and hit the
+                    floating translate button. The translation appears right there. No tab switching. No copy-pasting.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                    </svg>
+                </div>
+                <h3>Four Tones for Every Situation</h3>
+                <p><strong>Casual</strong> for friends. <strong>Boss</strong> for corporate emails.
+                    <strong>Junior</strong> for respectful communication with elders. <strong>Mix</strong> for that
+                    natural Urdu-English code-switching we all do. Pick the one that fits the moment.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                    </svg>
+                </div>
+                <h3>Your Data Stays on Your Device</h3>
+                <p>Translation history, notepad content, and settings are stored locally in your browser. We don't
+                    create accounts. We don't track usage. Your conversations are nobody's business but yours.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <polyline points="23 4 23 10 17 10" />
+                        <polyline points="1 20 1 14 7 14" />
+                        <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15" />
+                    </svg>
+                </div>
+                <h3>Replace or Append in One Click</h3>
+                <p>After translation, choose to replace your original text or append the translation below it. One click
+                    and you're done. The text gets injected directly into the field you're typing in.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                        <polyline points="14 2 14 8 20 8" />
+                    </svg>
+                </div>
+                <h3>Built-in Notepad & History</h3>
+                <p>Draft messages in the built-in notepad before sending. Every translation is saved to history so you
+                    can revisit, copy, or reference past translations anytime without re-translating.</p>
+            </div>
+        </div>
+
+        <!-- HOW IT WORKS -->
+        <div class="steps-section">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Three steps. No signup. No configuration.</p>
+                <span class="accent-bar"></span>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Install the Extension</h3>
+                    <p>Add AuraTranslate from the Chrome Web Store. It activates automatically on every website you
+                        visit.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Type in Any Text Field</h3>
+                    <p>Start typing in Roman Urdu or English anywhere — WhatsApp, Gmail, Twitter, anywhere with a text
+                        field.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Click the Floating Icon</h3>
+                    <p>The AuraTranslate button appears beside the text field. Click it and the translation replaces
+                        your text instantly.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- TRUST -->
+        <div class="trust-section">
+            <h2>Why AuraTranslate Over Everything Else</h2>
+            <p>Every other translator treats Roman Urdu like a second-class citizen. They're built for formal Urdu
+                script or generic language pairs. They don't understand "bhai scene set hai" or "mujhe kahi jana tha."
+            </p>
+            <p>AuraTranslate was built from scratch by Dr Web Jr. specifically for this gap — the phonetic bridge
+                between Roman Urdu and English that millions of Pakistanis use daily but no tool properly supports.</p>
+            <p>This isn't a wrapper around Google Translate. This is custom AI trained on how you actually speak.</p>
+        </div>
+
+        <!-- CTA -->
+        <div class="cta-section">
+            <h2>Ready to Stop Sounding Like a Robot?</h2>
+            <p>Install AuraTranslate and start communicating the way you actually think — in both languages,
+                effortlessly.</p>
+        </div>
+
+        <!-- SPONSOR -->
+        <div class="sponsor-section">
+            <p>Proudly Supported By</p>
+            <a href="https://topkitchenremodelingtacoma.com/" class="sponsor-link" rel="dofollow" target="_blank">Top
+                Kitchen Remodeling Tacoma — Premium Kitchen Renovations</a>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        &copy; 2026 AuraTranslate AI — Created by Dr Web Jr.
+        <br><br>
+        <a href="privacy.html">Privacy Policy</a> &nbsp;•&nbsp; <a href="terms.html">Terms of Service</a>
+    </footer>
+</body>
+
+</html>

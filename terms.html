@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service — AuraTranslate AI by Dr Web Jr.</title>
+    <meta name="description"
+        content="Terms of service for AuraTranslate AI. Simple, human-readable rules covering usage, intellectual property, liability, and fair use of the translation service.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #060612;
+            color: #e8e8f0;
+            line-height: 1.75;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .header {
+            text-align: center;
+            padding: 80px 24px 50px;
+            position: relative;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(102, 126, 234, 0.12) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .header-icon {
+            width: 72px;
+            height: 72px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 22px;
+            box-shadow: 0 8px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .header-icon svg {
+            width: 34px;
+            height: 34px;
+        }
+
+        .header h1 {
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            font-weight: 900;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #667eea 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .header p {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 1rem;
+        }
+
+        .last-updated {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 4px 14px;
+            background: rgba(102, 126, 234, 0.1);
+            border: 1px solid rgba(102, 126, 234, 0.2);
+            border-radius: 20px;
+            font-size: 0.78rem;
+            color: #a5b4fc;
+            font-weight: 600;
+        }
+
+        .container {
+            max-width: 840px;
+            margin: 0 auto;
+            padding: 0 24px 80px;
+        }
+
+        .nav-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: rgba(255, 255, 255, 0.5);
+            text-decoration: none;
+            margin-bottom: 28px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #667eea;
+        }
+
+        .nav-link svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .main-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 22px;
+            padding: 44px;
+        }
+
+        /* ═══ PREAMBLE ═══ */
+        .preamble {
+            background: rgba(102, 126, 234, 0.06);
+            border: 1px solid rgba(102, 126, 234, 0.15);
+            border-radius: 14px;
+            padding: 24px 28px;
+            margin-bottom: 40px;
+        }
+
+        .preamble p {
+            font-size: 0.98rem;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.8;
+        }
+
+        .preamble strong {
+            color: #a5b4fc;
+        }
+
+        /* ═══ SECTIONS ═══ */
+        .section {
+            margin-bottom: 36px;
+            padding-bottom: 36px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .section-head {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 14px;
+        }
+
+        .section-number {
+            flex-shrink: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 10px;
+            font-weight: 800;
+            font-size: 1rem;
+            color: white;
+        }
+
+        .section h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .section p {
+            color: rgba(255, 255, 255, 0.65);
+            font-size: 0.98rem;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+
+        .section p:last-child {
+            margin-bottom: 0;
+        }
+
+        .section ul {
+            list-style: none;
+            padding: 0;
+            margin: 8px 0;
+        }
+
+        .section li {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.65);
+            padding: 5px 0 5px 22px;
+            position: relative;
+            line-height: 1.7;
+        }
+
+        .section li::before {
+            content: '—';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: 700;
+        }
+
+        .highlight {
+            color: #a5b4fc;
+            font-weight: 600;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 44px 24px 32px;
+            color: rgba(255, 255, 255, 0.3);
+            font-size: 0.85rem;
+        }
+
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #8b9cf7;
+        }
+
+        @media (max-width: 768px) {
+            .main-card {
+                padding: 28px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                    <polyline points="14 2 14 8 20 8" />
+                    <line x1="16" y1="13" x2="8" y2="13" />
+                    <line x1="16" y1="17" x2="8" y2="17" />
+                </svg>
+            </div>
+            <h1>Terms of Service</h1>
+            <p>Clear rules. No legal jargon. Read it in two minutes.</p>
+            <div class="last-updated">Last updated: February 2026</div>
+        </div>
+    </header>
+
+    <div class="container">
+        <a href="benefits.html" class="nav-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6" />
+            </svg>
+            Back to Why AuraTranslate
+        </a>
+
+        <div class="main-card">
+            <div class="preamble">
+                <p>By installing and using <strong>AuraTranslate AI</strong>, you agree to the following terms. These
+                    terms exist to protect both you and us. We've kept them short and written them in plain language
+                    because nobody should need a lawyer to understand how a browser extension works.</p>
+            </div>
+
+            <!-- 1 -->
+            <div class="section">
+                <div class="section-head">
+                    <span class="section-number">1</span>
+                    <h2>What This Service Does</h2>
+                </div>
+                <p>AuraTranslate AI is a browser extension that translates text between Roman Urdu and English. It works
+                    inside text fields on websites you visit and through a popup interface. The extension uses AI
+                    language models to generate translations based on the text you provide.</p>
+                <p>The service is provided by Dr Web Jr. and is offered free of charge. It is designed for personal and
+                    professional communication.</p>
+            </div>
+
+            <!-- 2 -->
+            <div class="section">
+                <div class="section-head">
+                    <span class="section-number">2</span>
+                    <h2>Acceptable Use</h2>
+                </div>
+                <p>You can use AuraTranslate for any legitimate communication purpose. This includes personal messages,
+                    business emails, social media posts, academic work, and professional correspondence.</p>
+                <p>You agree not to use this tool for:</p>
+                <ul>
+                    <li>Generating content intended to harass, threaten, or harm others</li>
+                    <li>Creating deceptive or fraudulent communications</li>
+                    <li>Impersonating another person through translated messages</li>
+                    <li>Automated or scripted mass-translation that overloads the service</li>
+                    <li>Any activity that violates the laws of your jurisdiction</li>
+                </ul>
+            </div>
+
+            <!-- 3 -->
+            <div class="section">
+                <div class="section-head">
+                    <span class="section-number">3</span>
+                    <h2>Translation Accuracy</h2>
+                </div>
+                <p>Translations are generated by AI models and are provided on an "as-is" basis. While we make every
+                    effort to deliver accurate and natural-sounding translations, AI translations are not guaranteed to
+                    be perfect in every situation.</p>
+                <p><span class="highlight">Do not rely solely on AI translation for critical documents</span> —
+                    including legal contracts, medical records, immigration paperwork, or financial agreements. For
+                    high-stakes communication, always have a qualified human translator review the output.</p>
+                <p>We are not responsible for misunderstandings, missed nuances, or errors that occur as a result of
+                    using AI-generated translations.</p>
+            </div>
+
+            <!-- 4 -->
+            <div class="section">
+                <div class="section-head">
+                    <span class="section-number">4</span>
+                    <h2>Intellectual Property</h2>
+                </div>
+                <p>The AuraTranslate brand, code, design, AI prompts, and all associated assets are the intellectual
+                    property of Dr Web Jr. and Dr Web Jr. Linguistic Labs. You may not copy, reverse-engineer,
+                    redistribute, or resell any part of the extension without explicit permission.</p>
+                <p>Translations that you generate using the tool belong to you. You can use them however you like — in
+                    messages, documents, social media, or any other context. We claim no ownership over your translated
+                    content.</p>
+            </div>
+
+            <!-- 5 -->
+            <div class="section">
+                <div class="section-head">
+                    <span class="section-number">5</span>
+                    <h2>Fair Use and Rate Limits</h2>
+                </div>
+                <p>AuraTranslate is currently offered for free. To keep it free and available for everyone, we ask that
+                    you use it reasonably. Normal usage — translating messages, emails, and social media content — is
+                    fully supported.</p>
+                <p>Automated bots, scripts, or applications that make bulk translation requests may be temporarily or
+                    permanently blocked. If you're building something that requires high-volume translation, reach out
+                    to us directly so we can work together on a solution.</p>
+            </div>
+
+            <!-- 6 -->
+            <div class="section">
+                <div class="section-head">
+                    <span class="section-number">6</span>
+                    <h2>Service Availability</h2>
+                </div>
+                <p>We do our best to keep AuraTranslate running smoothly at all times, but we can't guarantee 100%
+                    uptime. The service depends on third-party AI providers and internet connectivity, both of which are
+                    outside our full control.</p>
+                <p>We may update, modify, or temporarily suspend the service for maintenance or improvements. We will
+                    not be liable for any losses resulting from temporary unavailability.</p>
+            </div>
+
+            <!-- 7 -->
+            <div class="section">
+                <div class="section-head">
+                    <span class="section-number">7</span>
+                    <h2>Limitation of Liability</h2>
+                </div>
+                <p>AuraTranslate AI is provided "as is" without warranties of any kind, express or implied. Dr Web Jr.
+                    and Dr Web Jr. Linguistic Labs will not be held liable for any indirect, incidental, or
+                    consequential damages arising from the use or inability to use this service.</p>
+                <p>Your use of the service is at your own risk. This includes any consequences of relying on
+                    AI-generated translations for important communications.</p>
+            </div>
+
+            <!-- 8 -->
+            <div class="section">
+                <div class="section-head">
+                    <span class="section-number">8</span>
+                    <h2>Changes to These Terms</h2>
+                </div>
+                <p>We may update these terms from time to time. When we do, we'll update the "Last updated" date at the
+                    top of this page. Continued use of the extension after changes are posted means you accept the
+                    updated terms.</p>
+                <p>For significant changes that affect your rights or usage, we'll make reasonable efforts to notify
+                    users through the extension or our website.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        &copy; 2026 AuraTranslate AI — Created by Dr Web Jr.
+        <br><br>
+        <a href="privacy.html">Privacy Policy</a> &nbsp;•&nbsp; <a href="benefits.html">Why AuraTranslate?</a>
+    </footer>
+</body>
+
+</html>
